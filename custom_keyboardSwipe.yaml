@@ -1,0 +1,287 @@
+keyboardSwipe:
+  # 中文 26 键滑动设置
+  # 123   上滑：上一个方案
+  #       下滑： 切换方案
+  # space 上滑：次选上屏
+  # shft  下滑：Tap
+  # ,     上滑：行首
+  # 。    上滑：行尾
+  # x     下滑：剪切
+  # V     下滑：粘贴
+  # c     下滑：复制
+  # del   上滑：清空
+  # enter 上滑：换行
+  - keyboardType: chinese
+    keys:
+      - action: character(a)
+        swipe:
+          - direction: up
+            action: character(`)
+            processByRIME: true
+            display: true
+          - direction: down
+            action: character(~)
+            processByRIME: true
+            display: true
+      - action: character(b)
+        swipe:
+          - direction: up
+            action: symbol(《》)
+          - direction: down
+            action: character(。)
+            processByRIME: true
+            display: true
+      - action: character(c)
+        swipe:
+          - direction: up
+            action: character(.)
+            processByRIME: true
+          - direction: down
+            action: character(>)
+            display: true
+      - action: character(d)
+        swipe:
+          - direction: up
+            action: character(=)
+          - direction: down
+            action: character(+)
+            display: true
+      - action: character(e)
+        swipe:
+          - direction: up
+            action: character(3)
+          - direction: down
+            action: character(#)
+            display: true
+          # - direction: down
+          #  action: keyboardType(alphabetic)
+          #  display: false
+      - action: character(f)
+        swipe:
+          - direction: up
+            action: character([)
+          - direction: down
+            action: character({)
+            display: true
+      - action: character(g)
+        swipe:
+          - direction: up
+            action: character(])
+          - direction: down
+            action: character(})
+            display: true
+      - action: character(h)
+        swipe:
+          - direction: up
+            action: character(\)
+          - direction: down
+            action: character(|)
+            display: true
+      - action: character(i)
+        swipe:
+          - direction: up
+            action: character(8)
+          - direction: down
+            action: character(*)
+            display: true
+      - action: character(j)
+        swipe:
+          - direction: up
+            action: character(/)
+          - direction: down
+            action: character(?)
+            display: true
+      - action: character(k)
+        swipe:
+          - direction: up
+            action: character(;)
+          - direction: down
+            action: character(:)
+            display: true
+      - action: character(l)
+        swipe:
+          - direction: up
+            action: character(')
+            processByRIME: true
+          - direction: down
+            action: character(")
+            processByRIME: true
+            display: true
+      - action: character(m)
+        swipe:
+          - direction: up
+            action: shortCommand(#行尾)
+          - direction: down
+            action: character(、)
+            processByRIME: true
+            display: true
+      - action: character(n)
+        swipe:
+          - direction: up
+            action: shortCommand(#中英切换)
+          - direction: down
+            action: character(、)
+            display: true
+      - action: character(o)
+        swipe:
+          - direction: up
+            action: character(9)
+          - direction: down
+            action: character(()
+            processByRIME: true
+            display: true
+      - action: character(p)
+        swipe:
+          - direction: up
+            action: character(0)
+          - direction: down
+            action: character())
+            processByRIME: true
+            display: true
+      - action: character(q)
+        swipe:
+          - direction: up
+            action: character(1)
+          - direction: down
+            action: character(!)
+            processByRIME: true
+            display: true
+      - action: character(r)
+        swipe:
+          - direction: up
+            action: character(4)
+          - direction: down
+            action: character($)
+            processByRIME: true
+            display: true
+      - action: character(s)
+        swipe:
+          - direction: up
+            action: character(-)
+          - direction: down
+            action: character(_)
+            display: true
+      - action: character(t)
+        swipe:
+          - direction: up
+            action: character(5)
+          - direction: down
+            action: character(%)
+            display: true
+      - action: character(u)
+        swipe:
+          - direction: up
+            action: character(7)
+          - direction: down
+            action: character(&)
+            display: true
+      - action: character(v)
+        swipe:
+          - direction: up
+            action: symbol(“”)
+            processByRIME: true
+          - direction: down
+            action: character(，)
+            processByRIME: true
+            display: true
+      - action: character(w)
+        swipe:
+          - direction: up
+            action: character(2)
+          - direction: down
+            action: character(@)
+            display: true
+      - action: character(x)
+        swipe:
+          - direction: up
+            action: character(,)
+            processByRIME: true
+          - direction: down
+            action: character(<)
+            display: true
+      - action: character(y)
+        swipe:
+          - direction: up
+            action: character(6)
+          - direction: down
+            action: character(^)
+            display: true
+      - action: character(z)
+        swipe:
+          - direction: up
+            action: shortCommand(#行首)
+          - direction: down
+            action: symbol(‘’)
+            display: true
+      - action: space
+        swipe:
+          - direction: up
+            action: shortCommand(#次选上屏)
+            display: true
+          - direction: down
+            action: shortCommand(#简繁切换)
+      - action: enter
+        swipe:
+          - direction: up
+            action: shortCommand(#换行)
+            display: true
+      - action: backspace
+        swipe:
+          - direction: up
+            action: shortCommand(#重输)
+            display: true
+      - action: keyboardType(numericNineGrid)
+        swipe:
+          - direction: up
+            action: shortCommand(#上个输入方案)
+            display: true
+          - direction: down
+            action: shortCommand(#方案切换)
+  # 中文九宫格滑动设置
+  - keyboardType: chineseNineGrid
+    keys:
+      - action: chineseNineGrid(@/.)
+        swipe:
+          - direction: up
+            action: character(1)
+            display: true
+      - action: chineseNineGrid(ABC)
+        swipe:
+          - direction: up
+            action: character(2)
+            display: true
+      - action: chineseNineGrid(DEF)
+        swipe:
+          - direction: up
+            action: character(3)
+            display: true
+      - action: chineseNineGrid(GHI)
+        swipe:
+          - direction: up
+            action: character(4)
+            display: true
+      - action: chineseNineGrid(JKL)
+        swipe:
+          - direction: up
+            action: character(5)
+            display: true
+      - action: chineseNineGrid(MNO)
+        swipe:
+          - direction: up
+            action: character(6)
+            display: true
+      - action: chineseNineGrid(PQRS)
+        swipe:
+          - direction: up
+            action: character(7)
+            display: true
+      - action: chineseNineGrid(TUV)
+        swipe:
+          - direction: up
+            action: character(8)
+            display: true
+      - action: chineseNineGrid(WXYZ)
+        swipe:
+          - direction: up
+            action: character(9)
+            display: true
